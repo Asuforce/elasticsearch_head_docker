@@ -8,3 +8,10 @@ services:
     ports:
       - "9200:9200"
       - "9300:9300"
+  head:
+    build:
+      context: "head/."
+    depends_on:
+      - es
+    ports:
+      - "9100:9100"
