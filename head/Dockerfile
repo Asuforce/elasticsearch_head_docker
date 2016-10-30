@@ -4,7 +4,7 @@ RUN npm install -g grunt-cli
 
 WORKDIR /app
 
-RUN git clone git://github.com/mobz/elasticsearch-head.git /app
+RUN git clone https://github.com/mobz/elasticsearch-head.git /app
 
 RUN npm install
 
