@@ -3,6 +3,8 @@ services:
   es:
     build:
       context: "es/."
+    command: /sbin/init
+    container_name: es
     volumes:
       - "~/.data/es/data:/usr/share/elasticsearch/data"
     ports:
@@ -11,6 +13,7 @@ services:
   head:
     build:
       context: "head/."
+    container_name: head
     depends_on:
       - es
     ports:
