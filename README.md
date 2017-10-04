@@ -18,6 +18,6 @@ $ docker-compose up -d
 you can access es container and start es5
 
 ```bash
-$ docker exec es /bin/bash
+$ docker-compose exec es /bin/bash
 $ systemctl start elasticsearch
 ```
