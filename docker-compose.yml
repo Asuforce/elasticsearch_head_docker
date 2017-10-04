@@ -5,6 +5,7 @@ services:
       context: "es/."
     command: /sbin/init
     container_name: es
+    privileged: true
     volumes:
       - "~/.data/es/data:/usr/share/elasticsearch/data"
     ports:
