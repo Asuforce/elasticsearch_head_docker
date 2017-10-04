@@ -1,5 +1,7 @@
 FROM elasticsearch:5.0.0
 
+ENV ES_HEAP_SIZE=512m
+
 RUN elasticsearch-plugin install analysis-kuromoji
 RUN elasticsearch-plugin install analysis-icu
 
