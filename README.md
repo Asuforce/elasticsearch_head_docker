@@ -9,8 +9,14 @@ elasticsearch-head on docker sample
 
 ## execute
 
+```bash
+$ git clone https://github.com/Asuforce/elasticsearch_head_docker.git
+$ cd elasticsearch_head_docker
+$ docker-compose up -d
 ```
-git clone https://github.com/kawasin73/elasticsearch_head_docker.git
-cd elasticsearch_head_docker
-docker-compose up
+
+you can access es container
+
+```bash
+$ docker exec es /bin/bash
 ```
